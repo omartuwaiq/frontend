@@ -15,11 +15,11 @@ export default class ListEmployees extends Component {
   // addEmployee=()=>{
   //     this.props.history.push("add");
   // }
-  componentDidMount() {
-    EmployeeService.getEmployees().then((res) => {
-      this.setState({ employees: res.data });
-      console.log(this.state.employees);
-    });
+//   componentDidMount() {
+//     EmployeeService.getEmployees().then((res) => {
+//       this.setState({ employees: res.data });
+//       console.log(this.state.employees);
+//     });
 
     // axios({
     //   method: "post",
@@ -33,28 +33,29 @@ export default class ListEmployees extends Component {
   }
 
   render() {
-    console.log(this.state.employees);
+//     console.log(this.state.employees);
     return (
       <div>
-        <h2 className="text-center">Employees List</h2>
-        <div className="row" padding="">
-          <Link to="/add" className="">
-            <Button variant="primary">Add a new Employee</Button>{" "}
-          </Link>
-          {""}
-        </div>
-        <div className="row">
-          <table className="table table-striped table-bordered">
-            <thead>
-              <tr>
-                <th>Employee First Name</th>
-                <th>Employee Last Name</th>
-                <th>Employee Department</th>
-                <th>Actions</th>
-                <th>Pic</th>
-                <th>pic2</th>
-                <th></th>
-              </tr>
+      <h2>hi</h2>
+//         <h2 className="text-center">Employees List</h2>
+//         <div className="row" padding="">
+//           <Link to="/add" className="">
+//             <Button variant="primary">Add a new Employee</Button>{" "}
+//           </Link>
+//           {""}
+//         </div>
+//         <div className="row">
+//           <table className="table table-striped table-bordered">
+//             <thead>
+//               <tr>
+//                 <th>Employee First Name</th>
+//                 <th>Employee Last Name</th>
+//                 <th>Employee Department</th>
+//                 <th>Actions</th>
+//                 <th>Pic</th>
+//                 <th>pic2</th>
+//                 <th></th>
+//               </tr>
 //               <tbody>
 //                 {this.state.employees.map((karem) => (
 //                   <tr key={karem.id}>
@@ -62,10 +63,10 @@ export default class ListEmployees extends Component {
 //                     <td>{karem.location}</td>
 //                   </tr>
 //                 ))}
-//               </tbody>
-            </thead>
-          </table>
-        </div>
+// //               </tbody>
+//             </thead>
+//           </table>
+//         </div>
       </div>
     );
   }
