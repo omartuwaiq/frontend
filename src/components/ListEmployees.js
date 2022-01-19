@@ -55,14 +55,14 @@ export default class ListEmployees extends Component {
                 <th>pic2</th>
                 <th></th>
               </tr>
-              <tbody>
-                {this.state.employees.map((karem) => (
-                  <tr key={karem.id}>
-                    <td>{karem.id}</td>
-                    <td>{karem.location}</td>
-                  </tr>
-                ))}
-              </tbody>
+//               <tbody>
+//                 {this.state.employees.map((karem) => (
+//                   <tr key={karem.id}>
+//                     <td>{karem.id}</td>
+//                     <td>{karem.location}</td>
+//                   </tr>
+//                 ))}
+//               </tbody>
             </thead>
           </table>
         </div>
